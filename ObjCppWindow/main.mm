@@ -14,7 +14,7 @@ int main(int argc, const char * argv[])
     NSApplication* myApp = NSApplication.sharedApplication;
     PAViewController* viewController = [[PAViewController alloc] init];
     myApp.mainMenu = viewController.mainMenu;
-    myApp.delegate = viewController;
+    myApp.delegate = viewController; // My View Controller to create a window
     [myApp run];
     return 0;
 };
